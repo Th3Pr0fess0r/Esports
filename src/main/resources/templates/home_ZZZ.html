@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to E-Sport</title>
+</head>
+<body>
+
+    <h1>Welcome to E-Sport</h1>
+
+    <hr>
+
+    <form action="/newGame" method="post">
+        <h3>Modale Nuovo Game</h3>
+        <button type="submit">Inserisci Nuovo Game</button>
+    </form>
+
+    <hr>
+
+    <ul>
+        <li><a th:href="@{/game/?idGames=League of Legend}">League of Legend</a></li>
+        <li><a th:href="@{/game/?idGames=Rainbow Six Siege}">Rainbow Six Siege</a></li>
+    </ul>
+
+</body>
+</html>
